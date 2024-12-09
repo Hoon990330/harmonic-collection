@@ -1,0 +1,68 @@
+body {
+     background-color: rgb(100, 113, 165);
+     background-image: url('images/1.png');
+     background-size: 300px auto;
+  }
+  
+  section {
+    font-family: Lobster;
+    display: flex;
+    font-weight: bold;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+  }
+  
+  .button {
+    padding: 20px 50px;
+    border-radius: 30px;
+    background-color: rgb(255, 243, 192);
+    color: black;
+    font-size: 60px;
+    font-size: 20px;
+    text-align: center;
+    transition: all 100ms;
+  }
+  
+  .button:hover {
+    background-color: #ffffff;
+    cursor: pointer;
+  }
+
+  .symbol_position {
+    position: absolute; 
+    top: 30px; 
+    left: 30px; 
+  }
+
+  .symbol_position img {
+    width: 60px; 
+    height: auto; 
+    max-width: 100%; 
+}
+.symbol_position img:hover {
+  width: 80px; 
+  height: auto; 
+  max-width: 100%; 
+}
+
+
+.symbol2_position {
+  position: absolute; 
+  top: 30px; 
+  left: 1400px; 
+}
+
+.symbol2_position img {
+  width: 70px; 
+  height: auto; 
+  max-width: 100%; 
+}
+
+.symbol2_position img:hover {
+  width: 85px; 
+  height: auto; 
+  max-width: 100%; 
+}
+

@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background-color: black;
+    overflow: hidden;
+    position: relative;
+}
+
+.image {
+    position: absolute;
+    width: 600px; 
+}
+
+#man {
+    left: 5%; 
+    top: 55%; 
+    transform: translateY(-50%); 
+}
+
+#woman {
+    right: 5%; 
+    top: 55%; 
+    transform: translateY(-50%); 
+}
+
+.clickable-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 100px;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    font-family: Permanent Marker;
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 3px solid white;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.clickable-box:hover {
+    transform: translate(-50%, -50%) scale(1.1); 
+    background-color: rgb(152, 152, 152); 
+    color: black; 
+}
+
+.surprise-text {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Permanent Marker', cursive;
+    font-size: 400px; 
+    color: red;
+    
+    text-align: center;
+    animation: popInOut 1.5s ease-in-out;
+    z-index: 1000;
+}
+
+@keyframes popInOut {
+    0% {
+        transform: translate(-50%, -50%) scale(0.5);
+        opacity: 0;
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1.2);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 0;
+    }
+}
+
+
+.symbol_position {
+    position: absolute; 
+    top: 30px; 
+    left: 30px; 
+  }
+
+  .symbol_position img {
+    width: 60px; 
+    height: auto; 
+    max-width: 100%; 
+}
+.symbol_position img:hover {
+  width: 80px; 
+  height: auto; 
+  max-width: 100%; 
+}
+
+
+.symbol2_position {
+  position: absolute; 
+  top: 30px; 
+  left: 1400px; 
+}
+
+.symbol2_position img {
+  width: 70px; 
+  height: auto; 
+  max-width: 100%; 
+}
+
+.symbol2_position img:hover {
+  width: 85px; 
+  height: auto; 
+  max-width: 100%; 
+}
